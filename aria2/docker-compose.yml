@@ -9,6 +9,7 @@ services:
     container_name: "aria2_rpc"
     restart: always
     ports:
-      - "6890:6800"
+      - "6880:6800"
+      - "6881-6999:6881-6999/udp"
     volumes:
       - ${DOWNLOAD_LOCATION}:/finished
