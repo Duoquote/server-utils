@@ -1,0 +1,7 @@
+version: "3.8"
+
+services:
+
+  aria2:
+    volumes:
+      - C:\downloads:/finished

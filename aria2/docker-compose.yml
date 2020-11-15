@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+
+  aria2:
+    image: aria2
+    build: .
+    env_file: .env
+    container_name: "aria2_rpc"
+    restart: always
+    ports:
+      - "6890:6800"
+    volumes:
+      - ${DOWNLOAD_LOCATION}:/finished
